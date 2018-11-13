@@ -1,0 +1,20 @@
+.header{
+    background: #36a0dd
+}
+.sidebar{
+    float: left;
+    width: 15%;
+    height: 500px;
+    background: #ccc;
+    padding: 20px;
+}
+.project:hover{
+    background: #a6a6ac;
+}
+.content{
+    background: #6a6b6b;
+    padding: 20px;
+}
+#info{
+    padding: 20px;
+}

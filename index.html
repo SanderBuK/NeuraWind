@@ -1,43 +1,50 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>NeuraWind</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <h1 style="text-align: center">
-            NeuraWind
-        </h1>  
-        <h3>Login</h3>
-        <form action="login.php" method="POST">
-            <div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NeuraWind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/styles.css" />
+</head>
+
+<body>
+    <h1 style="text-align: center">
+        NeuraWind
+    </h1>
+    <form action="login.php" method="POST">
+        <fieldset>
+            <legend><h3>Login</h3></legend>
+            <div style="display: inline-block">
                 <h4>Mail:</h4>
                 <input type="text" name="mail" />
             </div>
-            <div>
+            <div style="display: inline-block">
                 <h4>Kode:</h4>
                 <input type="password" name="password" />
             </div>
             <input type="submit" value="Log ind">
-        </form>
-        </br>
-        <h3>Opret</h3>
-        <form action="opret.php" method="POST">
-            <div>
+        </fieldset>
+    </form>
+    </br>
+    <form action="opret.php" method="POST">
+        <fieldset>
+            <legend><h3>Opret</h3></legend>
+            <div style="display: inline-block">
                 <h4>Navn:</h4>
                 <input type="text" name="name" />
             </div>
-            <div>
-                <h4>Email: </h4>
+            <div style="display: inline-block">
+                <h4>Mail: </h4>
                 <input type="text" name="mail" />
             </div>
-            <div>
+            <div style="display: inline-block">
                 <h4>Kode:</h4>
                 <input type="password" name="password" />
             </div>
             <input type="submit" value="Opret bruger">
-        </form>
-    </body>
+        </fieldset>
+    </form>
+</body>
 </html>
