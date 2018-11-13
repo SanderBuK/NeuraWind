@@ -28,7 +28,8 @@
         if($result->num_rows > 0){
             $information = $result->fetch_assoc();
             if($userPassword == $information['password']){
-                header("Location:home.html");
+                
+                header("Location:home.html?name=$username");
             }else{
                 header("Location:index.html");
             }
