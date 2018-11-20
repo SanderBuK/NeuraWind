@@ -1,43 +1,26 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Logging in, please wait</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/styles.css" />
-    </head>
-    <?php
-        $servername="localhost";
-        $username="root";
-        $password="";
-        $dbname="neurawind";
+<?php
+    require_once('connect_db.php');
 
-        $mail = $_POST["mail"];
-        $userPassword = $_POST["password"];
+    $mail = $_POST["mail"];
+    $userPassword = $_POST["password"];
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
+    //Used to retrieve information about the user on the home.php page.
+    session_start();
+    $_SESSION['usermail'] = $mail;
+    
+    $sql = "SELECT * FROM users WHERE email='$mail'";
+    $result = $conn->query($sql);
 
-        if($conn->connect_error){
-            die("død");
-        }
-
-        $sql = "SELECT password FROM users WHERE email='$mail'";
-        $result = $conn->query($sql);
-
-        if($result->num_rows > 0){
-            $information = $result->fetch_assoc();
-            if($userPassword == $information['password']){
-                
-                header("Location:home.html?name=$username");
-            }else{
-                header("Location:index.html");
-            }
+    if($result->num_rows > 0){
+        $information = $result->fetch_assoc();
+        if($userPassword == $information['password']){
+            header("Location:home.php");
         }else{
             header("Location:index.html");
         }
+    }else{
+        header("Location:index.html");
+    }
 
-        
-        $conn->close();
-    ?>
-</html>
+    $conn->close();
+?>
