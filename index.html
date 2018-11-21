@@ -1,50 +1,54 @@
-<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NeuraWind</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/styles.css" />
-</head>
+  </head>
 
-<body>
-    <h1 style="text-align: center">
-        NeuraWind
-    </h1>
-    <form action="login.php" method="POST">
-        <fieldset>
-            <legend><h3>Login</h3></legend>
-            <div style="display: inline-block">
-                <h4>Mail:</h4>
-                <input type="text" name="mail" />
-            </div>
-            <div style="display: inline-block">
-                <h4>Kode:</h4>
-                <input type="password" name="password" />
-            </div>
-            <input name='login' type="submit" value="Log ind">
-        </fieldset>
-    </form>
-    </br>
-    <form action="opret.php" method="POST">
-        <fieldset>
-            <legend><h3>Opret</h3></legend>
-            <div style="display: inline-block">
-                <h4>Navn:</h4>
-                <input type="text" name="name" />
-            </div>
-            <div style="display: inline-block">
-                <h4>Mail: </h4>
-                <input type="text" name="mail" />
-            </div>
-            <div style="display: inline-block">
-                <h4>Kode:</h4>
-                <input type="password" name="password" />
-            </div>
-            <input name='opret' type="submit" value="Opret bruger">
-        </fieldset>
-    </form>
-</body>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Neura&nbspWind</h1>
+        <p>Connect your ideas globally</p>
+        <a class="btn" href="#">Let's take a ride</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><a class="btnfirst" href="opret.html">Sign Up</a></li>
+          <li><a class="btnfirst" href="login.html">Login</a></li>
+          <li><a class="btnfirst" href="sponsors.html">Sponsors</a></li>
+          <li><a class="btnfirst" href="about.html">About</a></li>
+          <li><a class="btnfirst" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/cloud.svg" height="128" width="196">
+        <h2>Your brain on multitasking</h2>
+        <p>Our brains on multitasking aren't nearly as good as we think they are. Let's say you're working on an activity over here, on the right side of the brain, and suddenly you're trying to multitask another activity, like talking on the phone.</p>
+        <a class="btn2" href="https://edition.cnn.com/2015/04/09/health/your-brain-multitasking/index.html" >Learn more</a>
+    </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Get started</h2>
+        <p>We got your back. You're just one clik away from relief.</p>
+        <a class="btn" href="#">Start</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p>&copy; NeuraWind</p>
+      </div>
+    </div>
+  </body>
 </html>

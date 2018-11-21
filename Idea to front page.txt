@@ -1,0 +1,4 @@
+https://www.google.dk/search?ei=b5j0W4iPAsW4sQG126fwAw&q=cool+effect+for+a+headings+&oq=cool+effect+for+a+headings+&gs_l=psy-ab.3...23047.24396..24537...0.0..0.168.898.5j3......0....1..gws-wiz.......0i71j35i39j35i304i39j33i160.XqNK2IsfKlw
+
+Goal for future home page upgrade:
+Have a btn that scrolls automatically down the page.

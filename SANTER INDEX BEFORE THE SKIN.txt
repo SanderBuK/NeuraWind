@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NeuraWind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/styles.css" />
+</head>
+
+<body id="main"></body>
+  <h1>NeuraWind</h1>
+  <h2>So who are we?</h2>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+
+
+
+<!--Login box-->
+    <form action="login.php" method="POST">
+        <fieldset>
+            <legend><h3>Login</h3></legend>
+            <div class="Login">
+                <h4>Mail:</h4>
+                <input type="text" name="mail" />
+                <h4>Kode:</h4>
+                <input type="password" name="password" />
+            </div>
+
+            <input name='login' type="submit" value="Log ind">
+        </fieldset>
+    </form>
+    
+</br>
+
+<!--Opret box-->
+    <form action="opret.php" method="POST">
+        <fieldset>
+            <legend><h3>Opret</h3></legend>
+            <div class="Opret">
+                <h4>Navn:</h4>
+                <input type="text" name="name" />
+                <h4>Mail:</h4>
+                <input type="text" name="mail" />
+                <h4>Kode:</h4>
+                <input type="password" name="password" />
+            </div>
+
+            <input name='opret' type="submit" value="Opret bruger">
+        </fieldset>
+    </form>
+</body>
+</html>
