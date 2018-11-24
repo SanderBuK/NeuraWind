@@ -1,24 +1,25 @@
 <?php
-    require_once("connect_db.php");
+    require_once("with_user_project_id.php");
+    
+    $projectTitle = $_GET['title'];
 
-    $title = $_GET['title'];
-    $text = $_GET['text'];
-    $project_num = $_GET['num'];
+    $sqlUpdateTitle = "UPDATE user" . $user_id . "table SET title='" . $projectTitle . "' WHERE project_id=" . $project_id;
+    mysqli_query($conn, $sqlUpdateTitle);
 
-    session_start();
-    $mail = $_SESSION['usermail'];
+    $sqlEmptyTable = "TRUNCATE TABLE user" . $user_id . "project" . $project_id;
+    mysqli_query($conn, $sqlEmptyTable);
+    
+    
+    //Count is how many notewindows there are eg. 3 if there are two text windows and 1 draw window.
+    $count = $_GET['count'];
+    for($i = 0; $i < $count; $i++){
+        $title = $_GET['title' . $i];
+        $content = $_GET['content' . $i];
+        $sqlInsert = "INSERT INTO user" . $user_id . "project" . $project_id . " (type, title, content) VALUES ('text', '" . $title . "', '" . $content . "')";
+        mysqli_query($conn, $sqlInsert);
+    }
 
-    $sql = "SELECT user_id FROM users WHERE email='$mail'";
-    //$sql = "CREATE TABLE "'usermemetable'" (project_id int NOT NULL AUTO_INCREMENT, title VARCHAR(50), text VARCHAR(8000), PRIMARY KEY (project_id))";
-
-    $result = $conn->query($sql);
-
-    $information = $result->fetch_assoc();
-    $sql1 = "UPDATE user" . $information['user_id'] . "table SET title='" . $title . "', text='" . $text . "' WHERE project_id=" . $project_num;
-
-    mysqli_query($conn, $sql1);
-
-    header("Location:home.php");
+    header("Location:load_project.php?project_id=" . $project_id);
 
     $conn->close();
 ?>
