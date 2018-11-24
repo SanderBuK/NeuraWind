@@ -1,0 +1,26 @@
+    <form action="opret.php" method="POST">
+        <fieldset>
+            <legend><h3>Opret</h3></legend>
+            <div class="Opret">
+                <h4>Navn:</h4>
+                <input type="text" name="name" />
+            </div>
+
+            <div style="display: inline-block">
+                <h4>Mail: </h4>
+                <input type="text" name="mail" />
+            </div>
+
+            <div style="display: inline-block">
+                <h4>Kode:</h4>
+                <input type="password" name="password" />
+            </div>
+
+            <input name='opret' type="submit" value="Opret bruger">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+SANTER WAY
