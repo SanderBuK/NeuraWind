@@ -1,5 +1,5 @@
 html{
-    background: url("../Images/brain9.jpg");
+    background: url("../Images/brain15.jpg");
     background-size: cover;
 }
 
@@ -9,14 +9,13 @@ body{
 
 .container{
     width: 400px;
-    height: 290px;
+    height: 352px;
     text-align: center;
     background-color: none;
     color: white;
     border-radius: 20px;
     margin: 0px auto;
     margin-top: 150px; 
-    margin-bottom: 10px;
     padding-bottom: 0px;
 }
 
@@ -29,19 +28,20 @@ input[type="text"], input[type="password"]{
     padding-left: 20px;
     border: solid white;
     border-radius: 20px;
+    text-align: left;
 }
 
-.btnback{
-  border:solid 2px white;
-  border-radius: 20px;
-  color: white;
-  background: black;
-  position: relative;
-  padding: 5px 15px;
-  float: left;
-  margin-top: 420px;
-  margin-left: 10px;
-}
+.btnback {
+    border:solid 2px white;
+    border-radius: 20px;
+    color: white;
+    background: black;
+    position: relative;
+    padding: 5px 15px;
+    float: left;
+    margin-top: 420px;
+    margin-left: 10px;
+  }
 
 #btnlogin{
     width: 300px;
@@ -74,12 +74,12 @@ input[type="text"], input[type="password"]{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 12px 0 12px 0;
-    margin-top: 17px;
+    margin-top: 20px;
     background: none;
     font-size: 14px;
 }
 
-a{
+ a{
     color: white;
     cursor: pointer;
     font-weight: 700;
