@@ -1,207 +1,285 @@
+/*In general*/
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-  }
-  
-  .container {
-    margin: 0 auto;
-    max-width: 940px; 
-    padding: 0 10px;
-  }
-  
-  .header {
-    background: url("../Images/brain7.jpg") no-repeat center center; 
-    background-size: cover;
-    height: 800px;
-    text-align: center; 
-  }
-  
-  .header .container {
-    position: relative;
-    top: 200px;
-  }
-  
-  .header h1 {
-    color: rgb(255, 255, 255);
-    line-height: 100px; 
-    font-size: 80px;
-    letter-spacing: 8px;
-    margin-top: 0;
-    margin-bottom: 80px;
-    text-transform: uppercase; 
-  }
-  
-  @media (min-width:850px) {
-    .header h1 {
-      font-size: 120px;
-    }
-  }
-  
-  .header p {
-    color: rgb(255, 255, 255);
-    background: black;
-    padding: 5px 10px;
-    text-decoration: none; 
-    text-transform: uppercase; 
-    letter-spacing: 5px;
-    border: solid 3px white;
-    border-radius: 20px;
-    font-weight: 100;
-    margin-bottom: 50px;
-    margin-top: 0;
-  }
-  
-  .btnfirst {
-    color: rgb(255, 255, 255);
-    background: black;
-    padding: 5px 15px;
-    text-decoration: none; 
-    transition: background .5s; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border:solid 2px white;
-    border-radius: 20px;
-  }
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 
-  .btnfirst:hover{
-    background: #fff;
-    color: rgb(255, 0, 119);
-    cursor: pointer; 
-    transition-delay: 1s;
-    transition: background 2.5s; 
-    transition: color 1s;
-  }
+/*Font of all text on site*/
+body {
+  font-family: 'Gotham Medium', sans-serif;
+}
 
-  .btn {
-    color: rgb(255, 255, 255);
-    background: black;
-    padding: 10px 40px;
-    text-decoration: none; 
-    transition: background .5s; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border:solid 3px white;
-    border-radius: 20px;
-  }
+/*Font of Neura Wind*/
+body h1{
+  font-family: 'Roboto'
+}
 
-  .btn:hover{
-    background: #fff;
-    color: blue;
-    cursor: pointer; 
-    transition-delay: 1s;
-    transition: background 2.5s; 
-    transition: color 2s;
-  }
+/*Neura Wind and Sponsor banner*/
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
 
-  .btn2 {
-    color: rgb(255, 255, 255);
-    background: black;
-    padding: 10px 40px;
-    text-decoration: none; 
-    transition: background .5s; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border:solid 2px white;
-    border-radius: 20px;
-  }
+/*Main Background*/
+.header {
+  background: url("../Images/brain7.jpg") no-repeat center center; 
+  background-size: cover;
+  height: 800px;
+  text-align: center; 
+}
 
-  .btn2:hover{
-    background: #fff;
-    color: blue;
-    cursor: pointer; 
-    transition: background 2s; 
-    transition: color .5s;
-  }
 
-  
-  .nav { 
-    background: #000;
-    height: 80px; 
-    width: 100%;
+.header .container {
+  position: relative;
+  top: 170px;
+}
+
+/*Neura Wind*/
+h1 {
+  color: rgb(255, 255, 255);
+  line-height: 100px; 
+  font-size: 80px;
+  letter-spacing: 8px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-transform: uppercase; 
+}
+
+@media (min-width:850px) {
+  .container h1 {
+    font-size: 120px;
   }
-  
-  .nav ul {
-    height: 80px;
-    list-style: none;
-    margin: 0 auto; 
-    padding: 0;
+}
+
+/*Connect your ideas globally*/
+.connectbanner {
+  color: white;
+  background: black;
+  padding: 10px 40px;
+  text-decoration: none; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border:solid 3px white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/*Sign Up */
+.containertop .btntop1{
+  position: relative;
+  color: rgb(255, 255, 255);
+  background: black;
+  padding: 5px 15px;
+  text-decoration: none; 
+  transition: background .5s; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border:solid 2px white;
+  border-radius: 20px;
+  float: right;
+  margin-left: 25px;
+  margin-right: 20px;
+  margin-top: 10;
+}
+
+/*Sign Up Opon Hover*/
+.btntop1:hover{
+  background: #fff;
+  color: rgb(255, 0, 119);
+  cursor: pointer; 
+  transition-delay: 1s;
+  transition: background 2.5s; 
+  transition: color 1s;
+}
+
+/*Login*/
+.containertop .btntop2{
+  position: relative;
+  color: rgb(255, 255, 255);
+  background: black;
+  padding: 5px 15px;
+  text-decoration: none; 
+  transition: background .5s; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border:solid 2px white;
+  border-radius: 20px;
+  float: right;
+  margin-top: 10;
+}
+
+/*Login Opon Hover*/
+.btntop2:hover{
+  background: #fff;
+  color: rgb(255, 0, 119);
+  cursor: pointer; 
+  transition-delay: 1s;
+  transition: background 2.5s; 
+  transition: color 1s;
+}
+
+/*Sponsors, About and Contact*/
+.btnfirst {
+  color: rgb(255, 255, 255);
+  background: black;
+  padding: 5px 15px;
+  text-decoration: none; 
+  transition: background .5s; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border:solid 2px white;
+  border-radius: 20px;
+}
+
+/*Sponsors, About and Contact Opon Hover*/
+.btnfirst:hover{
+  background: #fff;
+  color: rgb(255, 0, 119);
+  cursor: pointer; 
+  transition-delay: 1s;
+  transition: background 2.5s; 
+  transition: color 1s;
+}
+
+/* "Let's take a ride and" "Start" */
+.btn {
+  color: rgb(255, 255, 255);
+  background: black;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border:solid 2px white;
+  border-radius: 20px;
+}
+
+/* "Let's take a ride and" "Start" Opon Hover*/
+.btn:hover{
+  background: #fff;
+  color: rgb(255, 0, 119);
+  cursor: pointer; 
+  transition: background 2s; 
+  transition: color .5s;
+}
+
+/*Learn more*/
+.btn2 {
+  color: rgb(255, 255, 255);
+  background: black;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border:solid 2px black;
+  border-radius: 20px;
+}
+
+/*Learn More Opon Hover*/
+.btn2:hover{
+  background: white;
+  color: rgb(255, 0, 119);
+  cursor: pointer; 
+  transition: background 2s; 
+  transition: color .5s;
+}
+
+/*Banner for Sponsor, About and Contact*/
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+}
+
+/*Banner for Sponsor, About and Contact Unordered list*/
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+/*The words Sponsor, About and Contact on Banner*/
+.nav ul li {
+ color: #fff;
+ display: inline-block; 
+ height: 80px;
+ line-height: 80px; 
+ list-style: none;
+ padding: 0 10px;
+ transition: background .5s; 
+}
+
+/* White part of the main screen: About "your brain on multitasking" */
+.main .container {
+  margin: 80px auto;
+}
+
+/*The image on the white banner*/
+.main img {
+  float: left;
+  margin: 0px 80px 0px 0;
+}
+
+/*Multitasking and Get started*/
+.main, .jumbotron{
+  padding: 0 30px;
+}
+
+/*The last section of the screen "We got your back...one clik away..." */
+.jumbotron {
+  background: url("../Images/NeuralNetwork3.png") center;
+  background-size: cover;
+  height: 500px; 
+}
+
+/*Postion of the text: "We got your back" */
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+/*Get startet text*/
+.jumbotron h2 {
+  color: #fff;
+  text-align: right; 
+}
+
+/*We got your back text*/
+.jumbotron p {
+  color: #fff; 
+  text-align: right; 
+}
+
+/*We got your back btn position*/
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: right; 
+}
+
+/*The black banner on the bottom position*/
+.footer { 
+  background: #000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+/*Neura wind text*/
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 60px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
+/*Neura Wind max-width*/
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    line-height: 64px;
   }
-  
-    .nav ul li {
-    color: #fff;
-    display: inline-block; 
-    height: 80px;
-    line-height: 80px; 
-    list-style: none;
-    padding: 0 10px;
-    transition: background .5s; 
-  }
-  
-  .main .container {
-    margin: 80px auto;
-  }
-  
-  .main img {
-    float: left;
-    margin: 0px 80px 0px 0;
-  }
-  
-  .jumbotron {
-    background: url("../Images/NeuralNetwork3.png") center;
-    background-size: cover;
-    height: 500px; 
-  }
-  
-  .jumbotron .container {
-    position: relative;
-    top: 220px;
-  }
-  
-  .jumbotron h2 {
-    color: #fff;
-    text-align: right; 
-  }
-  
-  .jumbotron p {
-    color: #fff; 
-    text-align: right; 
-  }
-  
-  .jumbotron .btn {
-    margin: 10px 0 0;
-    float: right; 
-  }
-  
-  .footer { 
-    background: #000;
-    height: 80px; 
-    padding-bottom: 50px;
-  }
-  
-  .footer p { 
-    color: #fff;
-    font-size: 14px;  
-    height: 60px; 
-    line-height: 80px;
-    margin: 0;  
-  }
-  
-  @media (max-width: 500px) {
-    .header h1 {
-      font-size: 50px;
-      line-height: 64px;
-    }
-  
-    .main, .jumbotron {
-      padding: 0 30px;
-    }
-  
-    .main img {
-      width: 100%;
-    }
-  }
+}
