@@ -7,7 +7,7 @@
     $sqlRemoveProject = "DELETE FROM user" . $user_id . "table WHERE project_id = " . $project_id;
     mysqli_query($conn, $sqlRemoveProject);
 
-    header("Location:home.php");
+    header("Location:../home.php");
 
     $conn->close();
 ?>

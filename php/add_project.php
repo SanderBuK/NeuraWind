@@ -27,7 +27,7 @@
     //Add as default a textbox, with the type: text, title: New Text, content: Add your text here
 
     //Navigate back to the home page
-    header("Location:home.php");
+    header("Location:../home.php");
 
     $conn->close();
 ?>

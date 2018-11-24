@@ -33,7 +33,7 @@
             session_start();
             $_SESSION['user_id'] = $user_id;
 
-            header("Location:home.php");
+            header("Location:../home.php");
         }else{
             die(header("Location:../signupPage.php?loginFailed=true&reason=error"));
         }
