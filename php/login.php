@@ -21,7 +21,7 @@
     if($result->num_rows > 0){
         $information = $result->fetch_assoc();
         if($userPassword == $information['password']){
-            header("Location:home.php");
+            header("Location:../home.php");
         }else{
             die(header("Location:../loginPage.php?loginFailed=true&reason=password"));
         }
