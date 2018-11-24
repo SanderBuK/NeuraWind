@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet/signup.css">
 </head>
 <body>
+    <a class="btnback" href="index.html">Back Home</a>
     <div class="container" id="container">
       <form>
         <h1 class="section-title">Create an account</h1>
