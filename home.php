@@ -48,8 +48,17 @@
                     }
                 }else{
                     $sql = "SELECT * FROM user" . $information['user_id'] . "table";
-
                     $projectdata = $conn->query($sql);
+
+                    //If a project that has been shared with you has been deleted, delete it from your user table too.
+                    while($project = mysqli_fetch_assoc($projectdata)){
+                        $sqlCheckTable = "DELETE FROM user" . $information['user_id'] . "table WHERE project_id =" . $project['project_id'] . " AND NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = '" . $project['projectpath'] . "')";
+                        mysqli_query($conn, $sqlCheckTable);
+                    }
+
+                    $sql = "SELECT * FROM user" . $information['user_id'] . "table";
+                    $projectdata = $conn->query($sql);
+
                     while($project = mysqli_fetch_assoc($projectdata)){
                         echo "<tr>";
                         echo "<td onclick='changeProject(" . $project['project_id'] . ");' class='project'>" . $project['title'] . "</td>";

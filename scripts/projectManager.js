@@ -27,10 +27,9 @@ function addContent(type) {
     location.href = ("php/add_content.php?project_id=" + project_id + "&type=" + type);
 }
 
-function removeContents(contentID) {
-    console.log(contentID);
+function removeContents(content_id) {
     project_id = sessionStorage.getItem("project_id");
-    location.href = ("php/remove_content.php?project_id=" + project_id + "&contentID=" + contentID);
+    location.href = ("php/remove_content.php?project_id=" + project_id + "&content_id=" + content_id);
 }
 
 function removeProject(project_id) {
