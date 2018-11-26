@@ -1,7 +1,7 @@
 <?php
     require_once("with_user_project_id.php");
     
-    $content_row = $_GET['contentID'];
+    $content_row = $_GET['content_id'];
 
     $sqlProjectpath = "SELECT projectpath FROM user" . $user_id . "table WHERE project_id=" . $project_id;
     $resultProjectpath = $conn->query($sqlProjectpath);
